@@ -34,6 +34,7 @@ app.use((req, res, next) => {
     res.header("Cross-Origin-Opener-Policy", "same-origin");
     next();
   });
+  
 app.use(flash());
 app.use(localsMiddleware);
 app.use("/uploads", express.static("uploads"))
